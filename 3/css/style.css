@@ -1,0 +1,621 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans Narrow", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+
+	background-color: #000;
+	background-image: url("/img/bg.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+.inner-page {
+	color: #000;
+
+	background-color: #f8f5f2;
+	background-image: url("/img/pattern-light.jpg");
+	background-repeat: repeat;
+}
+
+.inner-page .main-header {
+	background-color: #000;
+	margin-bottom: 50px;
+}
+
+.main-nav {
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.inner-page .main-nav {
+	flex-direction: row;
+}
+
+.site-nav,
+.user-nav {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.site-nav {
+	width: 560px;
+}
+
+.user-nav {
+	max-width: 150px;
+	margin-left: auto;
+	}
+
+.site-nav a,
+.user-nav a {
+	display: block;
+	padding: 25px 20px;
+	color: #fff;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.user-nav a:hover,
+.user-nav a:focus {
+	background-color: #242424;
+}
+
+.user-nav .sign-in {
+	position: relative;
+	padding-left: 50px;
+}
+
+.sign-in::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 27px;
+	left: 24px;
+	background: url("/img/login.svg") no-repeat 0 0;
+	color: white;
+	opacity: 0.3;
+}
+
+.sign-in:hover::before,
+.sign-in:focus::before {
+	opacity: 1;
+}
+
+.main-nav-logo {
+	width: 371px;
+	height: 155px;
+	margin-bottom: 75px; 
+	order: 1;
+	align-self: center;
+}
+
+.inner-page .main-nav-logo {
+	width: 111px;
+	height: 24px;
+
+	order: 0;
+	padding: 23px 20px;
+}
+
+.main-nav-wrapper {
+	background-color: #000;
+	margin-bottom: 30px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.main-nav-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.featurer {
+	margin-bottom: 81px;
+}
+
+.features-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.features-list,
+.news-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.feature-item {
+	width: 300px;
+	text-align: center;
+}
+
+.feature-item h3 {
+	position: relative;
+	font-size: 30px;
+	line-height: 42px;
+	margin: 0;
+	margin-bottom: 60px;
+}
+
+.feature-item h3::after {
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	background: #fff;
+	transform: rotate(45deg);
+	
+}
+
+.feature-item p {
+	margin: 0 10px;
+}
+
+.index-columns {
+	display: flex;
+	justify-content: space-between;
+
+	color: #000;
+	background-color: #f8f5f2;
+	background-image:
+		url("/img/h-line.png"),
+		url("/img/pattern-light.jpg");
+	background-repeat: no-repeat, repeat;
+	background-position: center, 0 0; 
+
+	padding: 50px 80px;
+	margin-bottom: 36px;
+}
+
+.news,
+.contacts {
+	width: 380px;
+}
+
+.contacts p:first-of-type {
+	margin-bottom: 32px;
+}
+
+.contacts p:not(:first-of-type) {
+	margin-bottom: 22px;
+}
+
+.index-columns h2 {
+	font-size: 30px;
+	line-height: 42px;
+	margin: 0 0 25px 0;
+}
+
+.news-item {
+	margin-bottom: 25px;
+}
+
+.news-item p {
+	margin: 0;
+}
+
+.news-item time {
+	text-transform: none;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 30px;
+	margin-right: 20px;
+	font: inherit;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #000;
+	border: none;
+}
+
+.button:hover,
+.button:focus {
+	background-color: #663d15;
+}
+
+.gallery,
+.entry {
+	width: 300px;
+}
+
+.gallery-container {
+	position: relative;
+	height: 261px;
+}
+
+.gallery-content {
+	height: 164px;
+	margin: 0;
+}
+
+.gallery-content img {
+	background-color: #ccc;
+	border: 7px solid #fff;
+}
+
+.gallery-button {
+	position: absolute;
+	width: 140px;
+	margin: 0;
+}
+
+.gallery-button-back {
+	left: 0;
+	bottom: 0;
+}
+
+.gallery-button-next {
+	right: 0;
+	bottom: 0;
+}
+
+.entry-info {
+	margin: 0 0 15px 0;
+}
+
+.appointment-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.appointment-item {
+	margin: 0 0 10px 0;
+}
+
+.appointment-item label {
+	display: block;
+	padding-left: 17px;
+	margin-bottom: 10px;
+}
+
+.appointment-form input {
+	font: inherit;
+	box-sizing: border-box;
+	width: 140px;
+	padding: 8px 15px 7px 15px;
+	background-color: transparent;
+	border: 2px solid #000;
+}
+
+.appointment-form input:hover,
+.appointment-form input:focus {
+	border: 2px solid #663d15;
+}
+
+.appointment-form .button {
+	width: 100%;
+	margin: 0;
+}
+
+.filter legend {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter ul {
+	list-style: none;
+	line-height: 18px;
+}
+
+.filter-input:hover+label,
+.filter-input:focus+label {
+	color: #663d15;
+}
+
+.filter-input:disabled+label {
+	color: #000;
+	opacity: 0.5;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.catalog-item {
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item:hover {
+	background-color: #fff;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item>a {
+	color: #000;
+}
+
+.catalog-item h3 {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: none;
+}
+
+.catalog-item-price b {
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #e5e5e5;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item a {
+	color: #fff;
+
+	background-color: #000;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+	background-color: #663d15;
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
+	color: #000;
+
+	background-color: #fff;
+}
+
+.product-photos ul {
+	list-style: none;
+}
+
+.product-photo-full,
+.product-photo-preview {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-article {
+	color: #aeaeae;
+}
+
+.product-price b {
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #e5e5e5;
+}
+
+.product-info h3 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.product-info ul {
+	list-style: none;
+}
+
+.page-title {
+	font-size: 30px;
+	line-height: 42px;
+
+	margin-bottom: 25px;
+}
+
+.breadcrumbs {
+	list-style: none;
+
+	padding: 0;
+	margin: 0;
+	margin-bottom: 55px;
+}
+
+.breadcrumbs a {
+	color: #000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	text-decoration: underline;
+}
+
+.breadcrumbs-current {
+	color: #aba9a7;
+}
+
+.filter {
+	width: 180px;
+}
+
+.catalog {
+	width: 700px;
+}
+
+.catalog-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+
+	padding: 0;
+	margin: 0;
+	margin-bottom: 45px;
+
+	list-style: none;
+}
+
+.catalog-item {
+	width: 220px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.pagination-list {
+	padding: 0;
+	margin: 0;
+}
+
+.product-photos {
+	width: 460px;
+}
+
+.product-info {
+	width: 390px;
+}
+
+.main-footer {
+	color: #fff;
+
+	background-color: #232323;
+	background-image: url("/img/pattern-dark.jpg");
+	background-repeat: repeat;
+
+	padding: 60px 0 40px 0;
+	margin-top: 65px;
+}
+
+.inner-page .main-footer {
+	margin-top: 59px;
+}
+
+.main-footer .container {
+	display: flex;
+}
+
+.footer-contacts {
+	width: 320px;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-contacts a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+	text-decoration: none;
+}
+
+.footer-social {
+	width: 140px;
+	margin: 0 260px 0 80px;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.footer-social a {
+	color: #fff;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+	background-color: #663d15;
+}
+
+.footer-copyright {
+	width: 140px;
+}
+
+.modal-sign-in {
+	color: #000;
+
+	background-color: #f8f5f2;
+	background-image: url("/img/pattern-light.jpg");
+	background-repeat: repeat;
+}
+
+.modal-sign-in h2 {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.sign-in-form input {
+	font: inherit;
+
+	background-color: transparent;
+	border: 2px solid #000;
+}
+
+.sign-in-form input:hover,
+.sign-in-form input:focus {
+	border: 2px solid #663d15;
+}
+
+.sign-in-remember:hover,
+.sign-in-remember:focus {
+	color: #663d15;
+}
+
+.sign-in-form a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.sign-in-form a:hover,
+.sign-in-form a:focus {
+	text-decoration: none;
+}
+
+.modal-map {
+	background-color: #ccc;
+	border: 7px solid #fff;
+}
