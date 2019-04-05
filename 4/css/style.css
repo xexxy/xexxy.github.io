@@ -54,6 +54,11 @@ nav {
 	color: white;
 }
 
+.main-nav a:focus,
+.main-nav a:hover {
+	color: #f2b563;
+}
+
 .nav-features {
 	grid-column: 2/3;
 	width: 300px;
