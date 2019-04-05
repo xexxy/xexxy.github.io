@@ -12,7 +12,7 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1140px 1fr;
 	grid-template-rows: minmax(300px, auto) minmax(400px, auto);
-	background: #5d8fb1 url("/img/header.jpg") no-repeat 0 -100px;
+	background: #5d8fb1 url("img/header.jpg") no-repeat 0 -100px;
 	background-size: cover;
 }
 
