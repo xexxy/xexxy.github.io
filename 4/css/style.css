@@ -38,11 +38,11 @@ header {
 	display: grid;
 	grid-template-columns: 1fr 1140px 1fr;
 	grid-template-rows: minmax(300px, auto) minmax(400px, auto);
-
 	grid-column: 1/-1;
 	background: #5d8fb1 url("../img/header.jpg") no-repeat 0 -100px;
 	background-size: cover;
 	margin-bottom: 100px;
+	box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.5);
 }
 
 main {
@@ -160,15 +160,19 @@ nav {
 }
 
 .services h3 {
-	width: 455px;
+	display: inline-block;
 	height: 50px;
-	margin: 0 0 50px;
-	padding: 0 0 0 100px;
+	margin: 50px 0 50px 0;
+	padding: 0 20px 0 100px;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 50px;
 	color: #fff;
 	background: #323232;
+}
+
+.services h3:first-of-type {
+	margin: 0 0 50px 0;
 }
 
 .wrapper {
@@ -182,8 +186,8 @@ nav {
 	list-style: none;
 }
 
-.services li {
-
+.services li:last-of-type p {
+	margin-bottom: 0;
 }
 
 .services li:last-child {
