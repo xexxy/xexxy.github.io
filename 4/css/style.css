@@ -178,6 +178,18 @@ nav {
 .wrapper {
 	display: flex;
 	justify-content: space-between;
+	position: relative;
+}
+
+.services .wrapper::before {
+	content: "";
+	position: absolute;
+	top: 9px;
+	right: 60px;
+	background: url("../img/checkbox-filled.svg") no-repeat 0 0;
+	background-size: 18px 18px;
+	height: 100%;
+	width: 100%;
 }
 
 .services ul {
@@ -196,29 +208,38 @@ nav {
 
 .services h4 {
 	position: relative;
+	cursor: pointer;
 }
 
 .services h4, span {
-	margin: 0;
+	margin: 0 ;
 	padding: 0;
-	font-size: 24px;
 	font-weight: 500;
 }
 
-.services h4::before {
+/* .services h4::after {
 	content: "";
 	position: absolute;
-	top: 5px;
-	right: 70px;
-	background: url("../img/checkbox-filled.svg") no-repeat 0 0;
-	background-size: 25px 25px;
+	top: 10px;
+
+	background: url("../img/Icon-\ Question.svg") no-repeat 0 0;
+	background-size: 16px 16px;
 	height: 100%;
 	width: 100%;
-}
+	opacity: 0.3;
+} */
 
 .services p {
 	padding: 0 100px 0 0;
+	display: none;
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 32px;
 }
+
+/* .services li:first-of-type p {
+	display: block;
+} */
 
 .services .line {
 	margin: 37px 0 37px 0;
