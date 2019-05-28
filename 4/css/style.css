@@ -248,7 +248,7 @@ details p.gray {
 .articles ul {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 50px;
+	grid-column-gap: 25px;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
@@ -266,7 +266,7 @@ details p.gray {
 }
 
 .articles h3 {
-	margin: -8px 0 18px 0;
+	margin: -8px 0 14px 0;
 	font-size: 18px;
 	font-weight: 500;
 }
@@ -278,7 +278,7 @@ details p.gray {
 }
 
 .articles p {
-	margin-top: 10px;
+	margin-top: 4px;
 	font-size: 16px;
 	line-height: 32px;
 	font-weight: 400;
