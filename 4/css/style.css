@@ -248,7 +248,7 @@ details p.gray {
 .articles ul {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 25px;
+	grid-gap: 34px 25px;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0;
