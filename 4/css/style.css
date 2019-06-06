@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500&display=swap&subset=cyrillic');
 
+*:focus {
+	outline: none;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -144,7 +148,7 @@ nav {
 	height: 300px;
 } */
 
-h2 {
+.wrapper h2 {
 	display: inline-block;
 	margin: 44px auto;
 	font-size: 24px;
@@ -286,9 +290,16 @@ details p.gray {
 	font-weight: 400;
 }
 
-*:focus {
-	outline: none;
+article h2 {
+
 }
+
+article p {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 400;
+}
+
 
 footer {
 	grid-column: 1/-1;
