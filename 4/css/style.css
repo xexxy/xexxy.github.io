@@ -249,7 +249,7 @@ details p.gray {
 	font-style: italic;
 }
 
-details li {
+/* details li {
 	position: relative;
 }
 
@@ -259,15 +259,15 @@ details li::before {
 	bottom: 0;
   left: 35px;
   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGhlaWdodD0iMiIgd2lkdGg9IjciPgogIDxkZWZzPgogICAgPHBhdGggaWQ9InBhdGgtMSIgb3BhY2l0eT0iMSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMCwwIEw3LDAgTDcsMiBMMCwyIEwwLDBaIi8+CiAgPC9kZWZzPgogIDxnIG9wYWNpdHk9IjEiPgogICAgPHVzZSB4bGluazpocmVmPSIjcGF0aC0xIiBmaWxsPSJyZ2IoMCwwLDApIiBmaWxsLW9wYWNpdHk9IjEiLz4KICA8L2c+Cjwvc3ZnPg==")
-		no-repeat 50% 50% / 0.5em 0.1em;
+		no-repeat 50% 50% / 0.055em 0.5em;
   width: 2em;
   height: 2em;
 	transition: transform 0.1s linear;
-}
+} */
 
 details li p {
 	display: inline-block;
-	/* font-style: italic; */
+	font-style: italic;
 }
 
 details li span {
