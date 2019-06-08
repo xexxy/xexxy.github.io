@@ -267,7 +267,7 @@ details li::before {
 
 details li p {
 	display: inline-block;
-	font-style: italic;
+	/* font-style: italic; */
 }
 
 details li span {
