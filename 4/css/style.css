@@ -245,8 +245,6 @@ details p.gray {
 	font-style: italic;
 }
 
-
-
 details ul p {
 	display: inline-block;
 }
@@ -311,16 +309,11 @@ details ul:last-child span {
 	font-weight: 400;
 }
 
-article h2 {
-
-}
-
 article p {
 	font-size: 16px;
 	line-height: 32px;
 	font-weight: 400;
 }
-
 
 footer {
 	grid-column: 1/-1;
