@@ -272,7 +272,7 @@ details li span {
 	padding-right: 50px;
 	font-size: 16px;
 	line-height: 32px;
-	font-style: italic;
+	/* font-style: italic; */
 }
 
 details li:first-of-type p,
