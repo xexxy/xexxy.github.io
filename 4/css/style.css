@@ -187,6 +187,10 @@ nav {
 	list-style: none;
 }
 
+.services li:last-of-type p {
+	margin-bottom: 0;
+}
+
 details {
   position: relative;
 }
@@ -245,20 +249,39 @@ details p.gray {
 	font-style: italic;
 }
 
-details ul p {
+/* details li::before {
+  content: "-";
+  position: absolute;
+  left: 35px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAP0lEQVQYV2NkYGBQYGBg2A+lFzAwMCxkZGBgmM/AwJDAgAAHQIL/kQTATJAgSKsDksQCkCBIIB5qxAMGBgZHAMwKCMMkNaorAAAAAElFTkSuQmCC")
+		no-repeat 50% 50% / 0.3em 0.3em;
+  width: 2em;
+  height: 2em;
+	transition: transform 0.1s linear;
+	color: gray;
+} */
+
+details li p {
 	display: inline-block;
+	font-style: italic;
 }
 
-details ul span {
+details li span {
 	float: right;
 	margin-top: 1em;
 	padding-right: 50px;
 	font-size: 16px;
 	line-height: 32px;
+	font-style: italic;
 }
 
-details ul:last-child p,
-details ul:last-child span {
+details li:first-of-type p,
+details li:first-of-type span {
+	margin-top: 0;
+}
+
+details li p,
+details li span {
 	margin-bottom: 0;
 }
 
