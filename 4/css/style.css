@@ -345,6 +345,7 @@ article p {
 footer {
 	grid-column: 1/-1;
 	display: grid;
+	align-items: center;
 	grid-template-columns: 1fr 1140px 1fr;
 	min-height: 200px;
 	margin-top: 50px;
@@ -355,19 +356,45 @@ footer {
 .contacts {
 	grid-column: 2/-2;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr)
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 150px;
+}
+
+.contacts div:not(:first-of-type) {
+	border-left: 0.5px solid rgba(255, 255, 255, 0.5);
+	padding-left: 20px;
 }
 
 .contacts h3 {
+	margin: 27px 0;
 	font-size: 18px;
 	line-height: 32px;
 	font-weight: 400;
 	color: #f2b563;
 }
 
-.contacts p {
+.contacts span {
 	font-size: 18px;
 	line-height: 32px;
 	font-weight: 400;
 	color: white;
 }
+
+.follow-us ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.follow-us li {
+	margin-right: 10px;
+}
+
+path {
+	fill: white;
+}
+
+/* .follow-us li:hover path {
+	fill: #f2b563;
+} */
