@@ -357,13 +357,14 @@ footer {
 	grid-column: 2/-2;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 25px;
 	grid-template-rows: 150px;
 }
 
-.contacts div:not(:first-of-type) {
+/* .contacts div:not(:first-of-type) {
 	border-left: 0.5px solid rgba(255, 255, 255, 0.5);
 	padding-left: 20px;
-}
+} */
 
 .contacts h3 {
 	margin: 27px 0;
