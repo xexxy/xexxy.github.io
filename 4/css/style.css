@@ -309,8 +309,6 @@ details li span {
 	box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.5);
 }
 
-
-
 article h2 {
 	display: inline-block;
 	margin: 44px auto;
@@ -318,6 +316,20 @@ article h2 {
 	font-weight: 500;
 	text-align: center;
 	border-bottom: 3px solid #f2b563;
+}
+
+article .center {
+	width: 100%;
+}
+
+article .left{
+	float: left;
+	margin-right: 32px;
+	margin-bottom: 16px;
+}
+
+article .bold {
+	font-weight: 500;
 }
 
 article p:first-of-type {
@@ -339,9 +351,7 @@ figcaption {
 	color: #969696;
 }
 
-article .center {
-	width: 100%
-}
+
 
 
 
