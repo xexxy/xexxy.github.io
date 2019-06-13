@@ -14,10 +14,15 @@ body {
 	color: #323232;
 }
 
-body {
+.main-page {
 	display: grid;
 	grid-template-columns: 1fr 1140px 1fr;
 	grid-template-rows: minmax(700px, auto);
+}
+
+.secondary-page {
+	display: grid;
+	grid-template-columns: 1fr 1140px 1fr;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -38,14 +43,21 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-header {
+.main-page header {
 	display: grid;
 	grid-template-columns: 1fr 1140px 1fr;
 	grid-template-rows: minmax(300px, auto) minmax(400px, auto);
 	grid-column: 1/-1;
-	background: #5d8fb1 url("../img/header.jpg") no-repeat 0 -100px;
+	background: #5a89aa url("../img/header.jpg") no-repeat 0 -100px;
 	background-size: cover;
 	box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.5);
+}
+
+.secondary-page header {
+	display: grid;
+	grid-template-columns: 1fr 1140px 1fr;
+	grid-column: 1/-1;
+	color: #323232;
 }
 
 main {
@@ -57,6 +69,7 @@ nav {
 	height: 86px;
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 50px;
 	
 }
 
@@ -67,6 +80,14 @@ nav {
 	line-height: 36px;
 	font-weight: 500;
 	color: white;
+}
+
+.main-page .nav-logo {
+	color: white;
+}
+
+.secondary-page .nav-logo {
+	color: #323232;
 }
 
 .main-nav {
@@ -86,8 +107,15 @@ nav {
 	font-weight: 400;
 	line-height: 36px;
 	text-decoration: none;
-	color: white;
 	transition: 0.4s;
+}
+
+.main-page .main-nav a {
+	color: white;
+}
+
+.secondary-page .main-nav a {
+	color: #323232;
 }
 
 .main-nav a:focus,
