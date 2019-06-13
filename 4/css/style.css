@@ -411,12 +411,15 @@ footer {
 	color: #f2b563;
 }
 
-.contacts span {
+.contacts span,
+.contacts a {
 	font-size: 18px;
 	line-height: 32px;
 	font-weight: 400;
+	text-decoration: none;
 	color: white;
 }
+
 
 .follow-us ul {
 	display: flex;
