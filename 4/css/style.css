@@ -116,7 +116,7 @@ nav {
 
 .button {
 	padding: 12px 30px 13px 30px;
-	border-radius: 50px;
+	border-radius: 5px;
 	background-color: #f2b563;
 	text-decoration: none;
 	color: white;
@@ -242,7 +242,7 @@ details p {
 	line-height: 32px;
 }
 
-details p.gray {
+.gray {
 	color: #969696;
 	font-size: 14px;
 	font-weight: 300;
@@ -351,6 +351,7 @@ footer {
 	margin-top: 50px;
 	background: #323232;
 	box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.5);
+	z-index: 1;
 }
 
 .contacts {
@@ -358,7 +359,8 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-column-gap: 25px;
-	grid-template-rows: 150px;
+	/* grid-template-rows: 150px; */
+	padding: 50px 0 39px;
 }
 
 /* .contacts div:not(:first-of-type) {
@@ -367,7 +369,7 @@ footer {
 } */
 
 .contacts h3 {
-	margin: 27px 0;
+	margin: 0 0 20px;
 	font-size: 18px;
 	line-height: 32px;
 	font-weight: 400;
@@ -375,6 +377,7 @@ footer {
 }
 
 .contacts span {
+	/* margin: 50px; */
 	font-size: 18px;
 	line-height: 32px;
 	font-weight: 400;
@@ -399,3 +402,14 @@ path {
 /* .follow-us li:hover path {
 	fill: #f2b563;
 } */
+
+.copyright {
+	grid-column: 2/-2;
+	text-align: center;
+	/* background-color: #323232;
+	opacity: 0.5; */
+}
+
+.copyright span {
+	font-style: normal;
+}
