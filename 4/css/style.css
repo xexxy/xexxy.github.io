@@ -275,8 +275,8 @@ details li span {
 	margin-bottom: 0;
 }
 
-.services .line {
-	margin: 35px 50px 35px 50px;
+.line {
+	margin: 35px 50px;
 	border-bottom: 1px solid #323232;
 	opacity: 0.2;
 }
@@ -355,10 +355,9 @@ figcaption {
 	color: #969696;
 }
 
-
-
-
-
+article .line {
+	margin: 35px 0;
+}
 
 footer {
 	grid-column: 1/-1;
