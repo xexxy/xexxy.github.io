@@ -320,6 +320,14 @@ article h2 {
 	border-bottom: 3px solid #f2b563;
 }
 
+article p:first-of-type {
+	margin-top: 0;
+}
+
+article p:last-of-type {
+	margin-bottom: 0;
+}
+
 figure {
 	margin: 0;
 }
