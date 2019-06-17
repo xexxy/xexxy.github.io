@@ -347,12 +347,13 @@ article .center {
 }
 
 article .left{
+	width: 40%;
 	float: left;
 	margin-right: 32px;
 	margin-bottom: 16px;
 }
 
-article .bold {
+article b {
 	font-weight: 500;
 }
 
