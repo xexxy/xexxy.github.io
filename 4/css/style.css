@@ -346,7 +346,7 @@ article .center {
 	width: 100%;
 }
 
-article .left{
+article .left {
 	width: 40%;
 	float: left;
 	margin-right: 32px;
@@ -370,6 +370,7 @@ figure {
 }
 
 article img {
+	width: 100%;
 	vertical-align: bottom;
 }
 
