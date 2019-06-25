@@ -558,7 +558,19 @@ a {
 	margin: 0 260px 0 80px;
 }
 
+.footer-social b,
+.footer-copyright b {
+	display: block;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
 .footer-social ul {
+	display: flex;
+	justify-content: space-between;
+	width: 140px;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -566,13 +578,32 @@ a {
 	color: #fff;
 }
 
-.footer-social a:hover,
-.footer-social a:focus {
-	background-color: #663d15;
+.social-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 43px;
+	height: 43px;
+	background-color: #000;
 }
 
+.social-button:hover,
+.social-button:focus {
+	background-color: #fff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+	fill: #000;
+}
+
+
 .footer-copyright {
-	width: 140px;
+	width: 150px;
+}
+
+.footer-copyright .button {
+	margin-right: 0;
 }
 
 .modal-sign-in {
