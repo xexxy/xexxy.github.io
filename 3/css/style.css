@@ -669,7 +669,8 @@ a {
 	margin-bottom: 10px;
 }
 
-.sign-in-form input {
+.sign-in-form input[type="login"],
+.sign-in-form input[type="password"] {
 	box-sizing: border-box;
 	width: 100%;
 	padding: 10px 40px 10px 15px;
@@ -707,7 +708,72 @@ a {
 	text-decoration: none;
 }
 
+.login-help {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 0;
+}
+
+.sign-in-remember {
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.sign-in-remember input[type="checkbox"] + .checkbox-indicator {
+	position: absolute; 
+	top: 1px;
+	left: 0;
+	width: 17px;
+	height: 17px;
+	border: 2px solid #000;
+}
+
+.sign-in-remember input[type="checkbox"]:focus + .checkbox-indicator {
+	border-color: #663d15;
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+.sign-in-remember input[type="checkbox"]:checked + .checkbox-indicator::before,
+.sign-in-remember input[type="checkbox"]:checked + .checkbox-indicator::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 1px;
+	width: 15px;
+	height: 2px;
+	background: #000;
+}
+
+.sign-in-remember input[type="checkbox"]:checked + .checkbox-indicator::before{
+	transform: rotate(45deg);
+}
+
+.sign-in-remember input[type="checkbox"]:checked + .checkbox-indicator::after  {
+	transform: rotate(-45deg);
+}
+
+.restore {
+	color: #000;
+	text-decoration: underline;
+}
+
+.sign-in-form .button {
+	width: 100%;
+	margin-right: 0;
+}
+
+
 .modal-map {
-	background-color: #ccc;
+	top: 50%;
+	left: 50%;
+	width: 766px;
+	height: 561px;
+	transform: translate(-50%, -50%);
 	border: 7px solid #fff;
+}
+
+.modal-map img {
+	width: 100%;
 }
