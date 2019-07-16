@@ -411,7 +411,7 @@ article img {
 	vertical-align: bottom;
 }
 
-.articles figcaption {
+article figcaption {
 	text-align: center;
 	font-size: 14px;
 	font-weight: 300;
