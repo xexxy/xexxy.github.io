@@ -3,7 +3,7 @@ function showSlides(id) {
   // debugger
   // comment
 
-  var slideIndex = 0;
+  var slideIndex = 5;
   var slides = document.querySelectorAll(`${id} .item`);
   var arrows = document.querySelectorAll(`${id} .arrow-article`);
   var dots = document.querySelectorAll(`${id} .slider-dots-item`);
