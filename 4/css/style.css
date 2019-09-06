@@ -506,6 +506,7 @@ article .line {
 } */
 
 .slider img {
+	display: none;
 	height: 600px;
 	object-fit: contain;
 }
