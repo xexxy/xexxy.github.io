@@ -532,7 +532,7 @@ article .line {
 .slider-dots {
 	position: absolute;
 	transform: translate(-50%, -50%);
-	bottom: 5%;
+	top: 575px;
 	left: 50%;
 	text-align: center;
 }
