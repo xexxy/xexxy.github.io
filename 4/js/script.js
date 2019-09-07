@@ -1,7 +1,6 @@
 function showSlides(id) {
 
   // debugger
-  // comment
 
   var slideIndex = 5;
   var slides = document.querySelectorAll(`${id} .item`);
