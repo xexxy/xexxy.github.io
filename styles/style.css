@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1rem;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+h1 {
+	font-size: 48px;
+}
+
 main {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1rem;
+
+}
+
+div {
+	height: 200px;
+	padding: 1rem;
+	background-color: skyblue;
+	/* border-radius: 5px; */
 }
